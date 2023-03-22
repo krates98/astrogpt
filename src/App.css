@@ -1,38 +1,105 @@
-.App {
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 20px;
+}
+
+section {
+  /* Set the background image and position it in the center */
+  background-image: url("../public/images/back.png");
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-size: cover; /* Scale the image to cover the container */
+  background-position: center center; /* Position the image in the center */
+  height: 100vh;
+}
+
+.btn-secondary {
+  color: #333;
+}
+
+.cover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tryourtech {
+  background-image: linear-gradient(to right, #fff, #e7e5e5);
+  background-size: cover;
+  height: "100vh";
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Roadmap */
+
+.animate {
+  transition: transform 0.3s ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.animate:hover {
+  transform: scale(1.05);
 }
 
-.App-link {
-  color: #61dafb;
+.topCard {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-body ul {
+  list-style: outside;
+}
+
+.textHead {
+  margin-top: 40px;
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #bddeba, rgb(180, 210, 178));
+  color: transparent;
+  background-clip: text;
+}
+
+.timeline-title {
+  font-size: 20px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #bddeba, rgb(180, 210, 178));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.timeline-body {
+  font-size: 15px;
+  font-weight: 300;
+  background-image: linear-gradient(to left, #bddeba, rgb(180, 210, 178));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.timeline-badge {
+  background-image: linear-gradient(to left, #bddeba, rgb(180, 210, 178));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.timeline {
+  list-style: none;
+}
+
+.textRoad {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to left, #bddeba, rgb(180, 210, 178));
+  color: transparent;
+  background-clip: text;
 }
