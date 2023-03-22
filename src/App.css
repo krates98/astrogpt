@@ -1,11 +1,36 @@
-.navbar-light .navbar-nav .nav-link {
+/* Body */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: black;
+}
+
+/* Navbar */
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-brand h1 {
+  font-size: 50px;
+  font-weight: 600;
+  background-image: radial-gradient(#ffffff, rgb(180, 210, 178));
+  letter-spacing: 5px;
+  color: transparent !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.navbar.bg-dark .navbar-brand h1 {
+  font-size: 28px;
   color: #fff;
-  font-size: 20px;
 }
 
 section {
   /* Set the background image and position it in the center */
-  background-image: url("../public/images/back.png");
+  background-image: url("../public/images/planetbackground21.png");
+
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-size: cover; /* Scale the image to cover the container */
   background-position: center center; /* Position the image in the center */
@@ -20,14 +45,154 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
+  letter-spacing: 1.2px;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+  animation-name: popUp;
+  animation: slideInUp 1s cubic-bezier(0.65, 0.05, 0.36, 1) forwards,
+    fadeIn 1s ease-out forwards;
+  opacity: 0;
+}
+@keyframes slideInUp {
+  0% {
+    transform: translate(-50%, 60%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cover-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: #0b132b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cover-text .lead {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 767px) {
+  .cover-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    letter-spacing: 1.2px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+    animation-name: popUp;
+    animation: slideInUp 1s cubic-bezier(0.65, 0.05, 0.36, 1) forwards,
+      fadeIn 1s ease-out forwards;
+    opacity: 0;
+  }
+
+  .cover-text h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #0b132b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .cover-text .lead {
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+@media (max-width: 768px) {
+  .cover-text {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 0.8rem;
+  }
+
+  .cover-text h1 {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+  }
+
+  .cover-text .lead {
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+}
+
+/* why aai */
+
+.learnMoreText {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.tryTechHead {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #1a1a1a;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.tryTechText {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.botDemoText {
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 .tryourtech {
   background-image: linear-gradient(to right, #fff, #e7e5e5);
   background-size: cover;
@@ -35,7 +200,155 @@ section {
   color: black;
 }
 
+@media (max-width: 767px) {
+  .tryTechHead {
+    font-size: 1.2rem;
+    margin-top: 5%;
+  }
+
+  .tryTechText {
+    font-size: 1rem;
+  }
+
+  .tryourtech {
+    height: auto;
+  }
+}
+
+/* Why aai */
+
+.whyAai {
+  background-image: url("../public/images/planetbackground.png");
+
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-size: cover; /* Scale the image to cover the container */
+  background-position: center center; /* Position the image in the center */
+  height: 100%;
+}
+
+.boxOver {
+  letter-spacing: 1.2px;
+
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.82);
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+  padding: 5%;
+  margin: 2%;
+}
+
+.tryWhyHead {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 3%;
+}
+
+.tryWhyText {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  color: rgb(236, 232, 232);
+  line-height: 1.5;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .boxOver {
+    margin: 5% 0;
+    padding: 10%;
+  }
+  .tryWhyHead {
+    font-size: 1.2rem;
+  }
+  .tryWhyText {
+    font-size: 1rem;
+  }
+}
+
+/* Token Distribution */
+.tokenDistribution {
+  background-image: linear-gradient(to right, #fff, #e7e5e5);
+  background-size: cover;
+  height: 100%;
+  color: black;
+  padding-top: 5rem;
+  margin-top: 5rem;
+}
+
+.tokenDistHead {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 3%;
+}
+
+.tokenDistText {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: rgb(80, 80, 80);
+  line-height: 1.5;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .tokenDistribution {
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+
+  .tokenDistHead {
+    font-size: 2rem;
+  }
+
+  .tokenDistText {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .tokenDistHead {
+    font-size: 1.8rem;
+  }
+
+  .tokenDistText {
+    font-size: 1rem;
+  }
+}
+
 /* Roadmap */
+
+.roadMap {
+  background-image: url("../public/images/planetbackground3.png");
+
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-size: cover; /* Scale the image to cover the container */
+  background-position: center center; /* Position the image in the center */
+  height: 100%;
+}
+
+.aaiRoadmapText {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(241, 240, 240, 0.2);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 3%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+}
 
 .animate {
   transition: transform 0.3s ease-in-out;
@@ -45,61 +358,31 @@ section {
   transform: scale(1.05);
 }
 
+.roadTop {
+  font-weight: bold;
+  color: #1a1a1a;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 .topCard {
-  font-size: 20px;
   font-weight: 300;
-  letter-spacing: 0.5px;
-  color: grey;
+  color: #1a1a1a;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+  text-transform: none;
 }
 
 .card-body ul {
   list-style: outside;
 }
 
-.textHead {
-  margin-top: 40px;
-  font-size: 70px;
-  font-weight: 600;
-  background-image: linear-gradient(to left, #bddeba, rgb(180, 210, 178));
-  color: transparent;
-  background-clip: text;
+.card-body ul li {
+  margin-top: 10px;
 }
 
-.timeline-title {
-  font-size: 20px;
-  font-weight: 600;
-  background-image: linear-gradient(to left, #bddeba, rgb(180, 210, 178));
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.timeline-body {
-  font-size: 15px;
-  font-weight: 300;
-  background-image: linear-gradient(to left, #bddeba, rgb(180, 210, 178));
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.timeline-badge {
-  background-image: linear-gradient(to left, #bddeba, rgb(180, 210, 178));
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.timeline {
-  list-style: none;
-}
-
-.textRoad {
-  margin-top: 30px;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  background-image: linear-gradient(to left, #bddeba, rgb(180, 210, 178));
-  color: transparent;
-  background-clip: text;
+.linkClass {
+  color: white;
+  text-decoration: none;
 }

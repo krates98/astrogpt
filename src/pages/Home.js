@@ -5,18 +5,21 @@ function Home() {
     <section className="d-flex justify-content-center align-items-center">
       <div className="text-center text-white">
         <div className="cover-text">
-          <h1>Cover your page.</h1>
-          <p className="lead">
-            Cover is a one-page template for building simple and beautiful home
-            pages. Download, edit the text, and add your own fullscreen
-            background photo to make it your own.
+          <h1>The Future is Now </h1>
+          <p className="lead tryTechText">
+            Our astrology app harnesses the power of AI to provide you with
+            accurate and advanced predictions about your future. With
+            personalized readings based on your birth chart and astrological
+            data, you can discover your true potential and path in life.
+            Experience the future of astrology today and unlock the secrets of
+            the stars with our AI-powered predictions.
           </p>
           <p className="lead">
             <a
               href="#"
-              className="btn btn-lg btn-secondary fw-bold border-white bg-white"
+              className="btn btn-lg btn-secondary fw-bold border-white bg-white learnMoreText"
             >
-              Learn more
+              Buy $AAI Now!
             </a>
           </p>
         </div>
