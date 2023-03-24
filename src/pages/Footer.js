@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaEnvelope,
-  FaTelegram,
-} from "react-icons/fa";
+import { FaTwitter, FaTelegram, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -15,21 +9,24 @@ function Footer() {
           <div className="col-md-4">
             <h5>Contact Us</h5>
 
-            <p>Email: info@example.com</p>
+            <p>
+              <FaEnvelope className="me-3" />
+              email: contact@astroaiguru.com
+            </p>
           </div>
           <div className="col-md-4">
             <h5>Follow Us</h5>
 
-            <a href="#" className="linkClass">
+            <a href="https://www.google.com" className="linkClass">
               <FaTwitter className="me-3" />
             </a>
-            <a href="#" className="linkClass">
+            <a href="https://www.google.com" className="linkClass">
               <FaTelegram className="me-3" />
             </a>
           </div>
           <div className="col-md-4">
             <h5>Contact Address</h5>
-            <a href="#" className="linkClass">
+            <a href="https://www.google.com" className="linkClass">
               0x2342143213123123123123
             </a>
           </div>

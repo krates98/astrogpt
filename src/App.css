@@ -98,7 +98,6 @@ section {
   background-color: transparent;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 767px) {
@@ -196,7 +195,8 @@ section {
 .tryourtech {
   background-image: linear-gradient(to right, #fff, #e7e5e5);
   background-size: cover;
-  height: "100vh";
+  height: "100%";
+  padding: 2%;
   color: black;
 }
 
@@ -212,6 +212,7 @@ section {
 
   .tryourtech {
     height: auto;
+    padding: 10%;
   }
 }
 
@@ -326,63 +327,102 @@ section {
 
 /* Roadmap */
 
+/* Roadmap */
 .roadMap {
   background-image: url("../public/images/planetbackground3.png");
-
-  background-repeat: no-repeat; /* Prevent image from repeating */
-  background-size: cover; /* Scale the image to cover the container */
-  background-position: center center; /* Position the image in the center */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   height: 100%;
 }
 
 .aaiRoadmapText {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #fff;
-  text-shadow: 1px 1px 2px rgba(241, 240, 240, 0.2);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   margin-top: 3%;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
 }
 
-.animate {
-  transition: transform 0.3s ease-in-out;
+.timeline {
+  display: flex;
+  flex-direction: column;
 }
 
-.animate:hover {
-  transform: scale(1.05);
+.timeline-row {
+  display: flex;
+  margin-bottom: 50px;
 }
 
-.roadTop {
+.timeline-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-date {
+  position: relative;
+  width: 25%;
+  text-align: center;
+}
+
+.timeline-circle {
+  margin: 0 auto 10px;
+}
+
+.timeline-date h4 {
   font-weight: bold;
-  color: #1a1a1a;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(6, 6, 6, 0.9);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
 }
 
-.topCard {
-  font-weight: 300;
-  color: #1a1a1a;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  letter-spacing: 1px;
-  text-transform: none;
+.timeline-content {
+  width: 75%;
+  padding: 0 30px;
 }
 
-.card-body ul {
-  list-style: outside;
+.timeline-content li {
+  list-style: none;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.card-body ul li {
-  margin-top: 10px;
+@media screen and (max-width: 767px) {
+  .timeline-row {
+    flex-direction: column;
+  }
+
+  .timeline-row:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .timeline-date {
+    width: 100%;
+  }
+
+  .timeline-content {
+    width: 100%;
+  }
 }
+
+/* Links */
 
 .linkClass {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
+}
+
+.linkClass:hover {
+  text-decoration: underline;
 }

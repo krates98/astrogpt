@@ -16,7 +16,7 @@ function Home() {
           </p>
           <p className="lead">
             <a
-              href="#"
+              href="https://www.google.com"
               className="btn btn-lg btn-secondary fw-bold border-white bg-white learnMoreText"
             >
               Buy $AAI Now!
