@@ -8,16 +8,14 @@ body {
 }
 
 /* Navbar */
-.navbar-brand {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navbar {
+  transition: all 0.5s ease-in-out;
 }
 
 .navbar-brand h1 {
   font-size: 50px;
   font-weight: 600;
-  background-image: radial-gradient(#ffffff, rgb(180, 210, 178));
+  background-image: radial-gradient(rgb(169, 169, 206), rgb(183, 182, 203));
   letter-spacing: 5px;
   color: transparent !important;
   background-clip: text;
@@ -29,20 +27,6 @@ body {
   color: #fff;
 }
 
-.navbar-toggler .bar1,
-.navbar-toggler .bar2,
-.navbar-toggler .bar3 {
-  display: block;
-  height: 2px;
-  width: 22px;
-  border-radius: 1px;
-  background-color: white;
-  margin: 4px auto;
-}
-
-.navbar-toggler .bar1::before,
-.navbar-toggler .bar1::after,
-.navbar-toggler .bar2::before,
 section {
   position: relative;
   height: 100vh;
@@ -243,7 +227,7 @@ section {
 /* Why aai */
 
 .whyAai {
-  background-image: url("../public/images/whyAi.jpg");
+  background-image: url("../public/images/roadmap.jpg");
 
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-size: cover; /* Scale the image to cover the container */
@@ -408,7 +392,7 @@ section {
 
 /* Roadmap */
 .roadMap {
-  background-image: url("../public/images/roadmap.jpg");
+  background-image: url("../public/images/whyAi.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

@@ -24,12 +24,10 @@ function Navbar() {
 
   return (
     <nav className={navbarClasses.join(" ")}>
-      <div className="container-fluid d-flex justify-content-between align-items-center">
-        <div className="d-flex justify-content-center align-items-center">
-          <a className="navbar-brand mx-auto text-light brand" href="/">
-            <h1>AstroAIGuru</h1>
-          </a>
-        </div>
+      <div className="container-fluid ">
+        <a className="navbar-brand mx-auto text-light brand" href="/">
+          <h1>AstroAIGuru</h1>
+        </a>
       </div>
     </nav>
   );

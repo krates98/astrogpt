@@ -43,7 +43,9 @@ function RoadMap() {
   return (
     <section className="roadMap">
       <div className="container">
-        <h2 className="text-center aaiRoadmapText mb-5">$AAI Token Roadmap</h2>
+        <h2 className="text-center aaiRoadmapText mt-5 mb-5">
+          $AAI Token Roadmap
+        </h2>
         <div className="timeline">
           {roadmapData.map((data, index) => (
             <div key={index} className="timeline-row">
