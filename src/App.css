@@ -8,8 +8,10 @@ body {
 }
 
 /* Navbar */
-.navbar {
-  transition: all 0.5s ease-in-out;
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-brand h1 {
@@ -42,13 +44,21 @@ body {
 .navbar-toggler .bar1::after,
 .navbar-toggler .bar2::before,
 section {
-  /* Set the background image and position it in the center */
-  background-image: url("../public/images/planetbackground21.png");
-
-  background-repeat: no-repeat; /* Prevent image from repeating */
-  background-size: cover; /* Scale the image to cover the container */
-  background-position: center center; /* Position the image in the center */
+  position: relative;
   height: 100vh;
+}
+
+/* Header */
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
 }
 
 .btn-secondary {
@@ -181,7 +191,7 @@ section {
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  color: #1a1a1a;
+  color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -190,7 +200,7 @@ section {
 .tryTechText {
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
-  color: #333;
+  color: white;
   line-height: 1.5;
   text-align: justify;
 }
@@ -200,12 +210,18 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+.botDemoText:hover {
+  color: grey;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 .tryourtech {
-  background-image: linear-gradient(to right, #fff, #e7e5e5);
-  background-size: cover;
-  height: "100%";
+  background-color: black;
+  height: 100%;
   padding: 2%;
-  color: black;
+  color: white;
 }
 
 @media (max-width: 1000px) {
@@ -227,7 +243,7 @@ section {
 /* Why aai */
 
 .whyAai {
-  background-image: url("../public/images/planetbackground.png");
+  background-image: url("../public/images/whyAi.jpg");
 
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-size: cover; /* Scale the image to cover the container */
@@ -281,10 +297,9 @@ section {
 
 /* Token Distribution */
 .tokenDistribution {
-  background-image: linear-gradient(to right, #fff, #e7e5e5);
-  background-size: cover;
+  background-color: #000000;
   height: 100%;
-  color: black;
+  color: #ffffff;
   padding-top: 5rem;
   margin-top: 5rem;
 }
@@ -293,7 +308,7 @@ section {
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  color: #000000;
+  color: #ffffff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -301,9 +316,39 @@ section {
 }
 
 .tokenDistText {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
-  color: rgb(80, 80, 80);
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-align: justify;
+}
+.tokenDistText ul li b {
+  color: rgb(149, 148, 208);
+}
+
+.supplyPhase {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5rem;
+  margin-top: 5rem;
+}
+
+.supplyHead {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 3%;
+}
+
+.supplyList {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.8);
   line-height: 1.5;
   text-align: justify;
 }
@@ -321,6 +366,19 @@ section {
   .tokenDistText {
     font-size: 1.2rem;
   }
+
+  .supplyPhase {
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+
+  .supplyHead {
+    font-size: 2rem;
+  }
+
+  .supplyList {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -331,13 +389,26 @@ section {
   .tokenDistText {
     font-size: 1rem;
   }
+
+  .supplyHead {
+    font-size: 1.5rem;
+  }
+
+  .supplyList {
+    font-size: 1rem;
+  }
+}
+
+/* Pie Chart */
+#token-distribution {
+  color: #ffffff;
 }
 
 /* Roadmap */
 
 /* Roadmap */
 .roadMap {
-  background-image: url("../public/images/planetbackground3.png");
+  background-image: url("../public/images/roadmap.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -397,6 +468,9 @@ section {
 .timeline-content {
   width: 75%;
   padding: 0 30px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 .timeline-content li {

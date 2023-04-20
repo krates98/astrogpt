@@ -3,6 +3,9 @@ import React from "react";
 function Home() {
   return (
     <section className="d-flex justify-content-center align-items-center">
+      <video autoPlay muted loop playsInline className="background-video">
+        <source src="/video/bg.mp4" type="video/mp4" />
+      </video>
       <div className="text-center text-white">
         <div className="cover-text">
           <h1>The Future is Now </h1>

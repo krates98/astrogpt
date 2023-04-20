@@ -7,22 +7,31 @@ function PieChart() {
   useEffect(() => {
     const data = {
       labels: [
-        "Public Sale",
-        "Team & Advisors",
-        "Platform Development & Marketing",
-        "Ecosystem Development",
-        "Partnerships",
+        "Public Round",
+        "DEX Liquidity",
+        "Team",
+        "Advisors",
+        "Marketing",
+        "Development/DAO",
+        "Staking Rewards",
+        "CEX Listing",
       ],
       datasets: [
         {
           label: "Token Distribution",
-          data: [500000000, 200000000, 150000000, 100000000, 50000000],
+          data: [
+            40000000, 24000000, 6000000, 3000000, 5000000, 6000000, 8000000,
+            8000000,
+          ],
           backgroundColor: [
             "#003f5c",
             "#58508d",
             "#bc5090",
             "#ff6361",
             "#ffa600",
+            "#ff7c43",
+            "#2fa300",
+            "#dd5030",
           ],
         },
       ],

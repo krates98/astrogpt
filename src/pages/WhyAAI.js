@@ -20,9 +20,9 @@ function WhyAAI() {
               <br /> <br /> But that's not all. When you hold $AAI tokens,
               you'll benefit from our token burn mechanism. Half of the tokens
               used for buying items and consulting with astrologers will be
-              burned, with a maximum limit of 200 million tokens. This means
-              that the supply of $AAI tokens will decrease over time, making
-              each token more valuable.
+              burned, with a maximum limit of 20 million tokens. This means that
+              the supply of $AAI tokens will decrease over time, making each
+              token more valuable.
               <br /> <br /> So why do we need $AAI token? It's simple - $AAI
               token is the backbone of our platform, and owning $AAI tokens
               provides exclusive benefits and access to our groundbreaking

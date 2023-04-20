@@ -42,7 +42,7 @@ function TryOurTech() {
               today and experience the results firsthand.
             </p>
             <a
-              href="https://www.google.com"
+              href="https://t.me/astro_guru_ai_bot"
               className="btn btn-lg btn-secondary fw-bold border-white bg-black botDemoText"
             >
               Telegram Bot Demo

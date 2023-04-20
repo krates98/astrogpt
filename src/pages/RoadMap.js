@@ -3,7 +3,7 @@ import React from "react";
 function RoadMap() {
   const roadmapData = [
     {
-      quarter: "Quarter 1",
+      quarter: "Quarter 2",
       items: [
         "Public sale & launch of $AAI tokens",
         "Initial marketing push to attract new users and investors",
@@ -12,7 +12,7 @@ function RoadMap() {
       ],
     },
     {
-      quarter: "Quarter 2",
+      quarter: "Quarter 3",
       items: [
         "Launch of DOB NFTs and integration with platform",
         "Begin burning of $AAI tokens, with a target of burning up to 50% of tokens used for buying items and consulting with astrologers",
@@ -21,7 +21,7 @@ function RoadMap() {
       ],
     },
     {
-      quarter: "Quarter 3",
+      quarter: "Quarter 4",
       items: [
         "Onboarding of professional astrologers to provide 1-to-1 consultations to users",
         "Launch of a more extensive marketplace for astrological products and services",
@@ -30,7 +30,7 @@ function RoadMap() {
       ],
     },
     {
-      quarter: "Quarter 4",
+      quarter: "2024",
       items: [
         "Launch of a mobile app for the platform, integrating all existing features and providing a better user experience",
         "Focus on user acquisition and retention, with additional marketing efforts and customer support",
