@@ -27,6 +27,20 @@ body {
   color: #fff;
 }
 
+.navbar-toggler .bar1,
+.navbar-toggler .bar2,
+.navbar-toggler .bar3 {
+  display: block;
+  height: 2px;
+  width: 22px;
+  border-radius: 1px;
+  background-color: white;
+  margin: 4px auto;
+}
+
+.navbar-toggler .bar1::before,
+.navbar-toggler .bar1::after,
+.navbar-toggler .bar2::before,
 section {
   /* Set the background image and position it in the center */
   background-image: url("../public/images/planetbackground21.png");
